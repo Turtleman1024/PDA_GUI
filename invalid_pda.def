@@ -1,0 +1,30 @@
+This PDA accepts the language of odd palindromes over {a, b} is shown below. Any transitition not specified in this pushdown automaton is empty.
+
+StaTeS s0 s1 s2
+
+InPUt_aLphABeT a b
+
+StACk_aLphABeT X Y Z
+
+TrANsiTION_FunCTioN
+ s0 a X   s0 XX
+ s0 a X   s1 X
+ s0 a Y   s0 XY
+ s0 a Y   s1 Y
+ s0 a Z   s0 XZ
+ s0 a Z   s1 Z
+ s0 b X   s0 YX
+ s0 b X   s1 X
+ s0 b Y   s0 YY
+ s0 b Y   s1 Y
+ s0 b Z   s0 YZ
+ s0 b Z   s1 Z
+ s1 a X   s1 \
+ s1 b Y   s1 \
+ s1 \ Z   s2 \
+
+InITiaL_StaTE s0 
+
+StArT_CHarACteR Z
+
+FinAl_StaTEs s2

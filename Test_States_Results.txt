@@ -1,0 +1,7 @@
+---Test States Results---
+Test Case	Input				Expected Output		Result
+-----------------------------------------------------------
+ 1			['s0', 's1', 's2']	STATES: s0 s1 s2	Passed
+ 2			s3					False				Passed
+ 3			s1					True				Passed
+ 4			['s0', 's1', 's2']	['s0', 's1', 's2']	Passed

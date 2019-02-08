@@ -1,0 +1,78 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ac088308-516c-4cec-b10e-0a585c1535b6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>422-Automaton</Name>
+    <RootNamespace>422-Automaton</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Automaton.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration_Settings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Final_States.py" />
+    <Compile Include="Input_Alphabet.py" />
+    <Compile Include="Input_Strings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse_File.py" />
+    <Compile Include="pda.py" />
+    <Compile Include="pda_prototype.py" />
+    <Compile Include="Stack_Alphabet.py" />
+    <Compile Include="States.py" />
+    <Compile Include="test_Final_States.py" />
+    <Compile Include="test_Input_Alphabet.py" />
+    <Compile Include="test_Stack_Alphabet.py" />
+    <Compile Include="test_States.py" />
+    <Compile Include="transition.py" />
+    <Compile Include="Validate_Def_File.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="invalid2_pda.def" />
+    <Content Include="invalid_pda.cfg" />
+    <Content Include="invalid_pda.def" />
+    <Content Include="invalid_pda.str" />
+    <Content Include="pda.cfg" />
+    <Content Include="pda.def" />
+    <Content Include="pda.str" />
+    <Content Include="README.md" />
+    <Content Include="Test_Final_States_Results.txt" />
+    <Content Include="Test_Input_Alphabet_Results.txt" />
+    <Content Include="Test_Stack_Alphabet_Results.txt" />
+    <Content Include="Test_States_Results.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

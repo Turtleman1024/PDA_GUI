@@ -1,0 +1,7 @@
+---Test Input Alphabet Results---
+Test Case	Input			Expected Output			Result
+-----------------------------------------------------------
+ 1			['a', 'b']		INPUT_ALPHABET: a b		Passed
+ 2			c				False					Passed
+ 3			a				True					Passed
+ 4			['a', 'b']		['a', 'b']				Passed
